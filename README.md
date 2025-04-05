@@ -42,5 +42,12 @@ All results are stored in a database and can be accessed through a REST API.
 
 ## 📁 Folder Structure (Planned)
 
-ai-resume-scanner/ ├── backend-java/ # Java Spring Boot app │ └── src/ ├── ml-python/ # Python ML model + Flask API │ └── app.py ├── db/ # SQL scripts or Docker DB config ├── docker-compose.yml └── README.md
+ai-resume-scanner/
+├── backend-java/         # Java Spring Boot app
+│  └── src/ 
+├── ml-python/            # Python ML model + Flask API 
+│  └── app.py 
+├── db/                   # SQL scripts or Docker DB config 
+├── docker-compose.yml
+└── README.md
 
