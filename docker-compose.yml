@@ -1,0 +1,51 @@
+
+---
+
+## 🔄 How it Works (Workflow)
+
+1. 📝 User uploads resume (PDF) to Java backend
+2. 📤 Backend sends resume to Python ML API
+3. 🧠 Python extracts text + classifies it
+4. 📥 Java receives prediction and saves result to DB
+5. (Optional) Show result in console or web interface
+
+---
+
+## 🚧 Milestones (Planned Features)
+
+- [ ] Build Spring Boot REST API for upload
+- [ ] Extract text using Python (`PyMuPDF`)
+- [ ] Train ML model (Logistic Regression)
+- [ ] Deploy Flask API for prediction
+- [ ] Connect Java backend to Flask
+- [ ] Save and display prediction
+
+---
+
+## 📦 Deployment
+
+Planned with:
+- Docker Compose (for both services)
+- Deployed on **Render** or **Railway** (free hosting)
+
+---
+
+## 🧑‍💻 Author
+
+Built with ❤️ by [Your Name] — a passionate college student building impactful AI-powered backend systems for the future of Bharat 🇮🇳
+
+---
+
+## 🤝 Contribute / Connect
+
+Open for feedback, contributors, and mentors!
+
+- 🌐 LinkedIn: [Add link here]
+- 🐙 GitHub: [Your GitHub Profile Link]
+
+---
+
+## 📌 License
+
+This project is open-source and free to use under the MIT License.
+
