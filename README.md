@@ -41,7 +41,7 @@ All results are stored in a database and can be accessed through a REST API.
 ---
 
 ## 📁 Folder Structure (Planned)
-
+```
 ai-resume-scanner/
 ├── backend-java/         # Java Spring Boot app
 │  └── src/ 
@@ -50,4 +50,4 @@ ai-resume-scanner/
 ├── db/                   # SQL scripts or Docker DB config 
 ├── docker-compose.yml
 └── README.md
-
+```
