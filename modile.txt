@@ -1,0 +1,46 @@
+from fpdf import FPDF
+
+# List of team names categorized
+cyberpunk_mysterious = [
+    "ShadowStack.ASP – Sounds like you operate in the shadows of the tech stack.",
+    "NullSec Trio – A nod to “null security,” like an elite hacker unit.",
+    "BlackHat.ASP – Edgy name (you can clarify you're ethical hackers though).",
+    "DarkMode Syndicate – Sleek and stylish, like the night version of coders.",
+    "EchoRoot – Has a terminal/hacker feel. Mysterious and sleek.",
+    "GlitchTrio – You are the bug and the fix."
+]
+
+humorous_witty = [
+    "Hackstreet Boys – Absolute banger if you don’t mind a bit of meme energy.",
+    "Pseudocode Ninjas – Because who needs actual code when pseudocode looks cooler?",
+    "ReturnNull() – That chaotic energy of something that’s supposed to work but doesn’t.",
+    "console.log(legends) – For the devs who flex through their logs."
+]
+
+# Create PDF
+pdf = FPDF()
+pdf.add_page()
+pdf.set_font("Arial", size=12)
+
+# Title
+pdf.set_font("Arial", 'B', 14)
+pdf.cell(200, 10, "Hackathon Team Name Ideas", ln=True, align='C')
+
+# Cyberpunk / Mysterious Section
+pdf.set_font("Arial", 'B', 12)
+pdf.ln(10)
+pdf.cell(200, 10, "Cyberpunk / Mysterious Vibes", ln=True)
+pdf.set_font("Arial", size=12)
+for item in cyberpunk_mysterious:
+    pdf.multi_cell(0, 10, f"- {item}")
+
+# Humorous / Witty Section
+pdf.set_font("Arial", 'B', 12)
+pdf.ln(5)
+pdf.cell(200, 10, "Humorous / Witty", ln=True)
+pdf.set_font("Arial", size=12)
+for item in humorous_witty:
+    pdf.multi_cell(0, 10, f"- {item}")
+
+# Save PDF
+pdf.output("Hackathon_Team_Name_Ideas.pdf")
